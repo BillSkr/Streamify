@@ -1,5 +1,5 @@
-  /* --- Theme variables --- */
-  :root {
+/* --- Theme variables --- */
+:root {
     /* Light theme */
     --bg-color: #ffffff;
     --text-color: #000000;
@@ -7,6 +7,7 @@
     --nav-hover-text: #000000;
     --button-hover-bg: rgba(0,0,0,0.1);
   }
+  
   html[data-theme="dark"] {
     /* Dark theme */
     --bg-color: #121212;
@@ -15,15 +16,20 @@
     --nav-hover-text: #ffffff;
     --button-hover-bg: rgba(255,255,255,0.1);
   }
-
+  
   /* --- Global styling --- */
   body {
     margin: 0;
-    color: var(--text-color);
     font-family: sans-serif;
-    background-image: url(image.jpg);
+    color: var(--text-color);
+    background-color: var(--bg-color);       /* fallback χρώμα */
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;             /* να μην επαναλαμβάνεται */
+    background-size: cover;                   /* να καλύπτει ολόκληρη την οθόνη */
+    background-position: center center;       /* να είναι στο κέντρο */
+    background-attachment: fixed;             /* σταθερή στο scroll */
   }
-
+  
   /* Navbar */
   ul#navbar {
     overflow: hidden;
@@ -33,9 +39,11 @@
     z-index: 3;
     list-style: none;
   }
+  
   ul#navbar li {
     float: right;
   }
+  
   ul#navbar li a {
     display: block;
     color: var(--text-color);
@@ -43,11 +51,12 @@
     padding: 14px 16px;
     text-decoration: none;
   }
+  
   ul#navbar li a:hover {
     background-color: var(--nav-hover-bg);
     color: var(--nav-hover-text);
   }
-
+  
   /* Main content */
   #content {
     position: relative;
@@ -56,11 +65,13 @@
     width: 80%;
     max-width: 600px;
   }
+  
   h1, h2 {
     margin-top: 20px;
     margin-bottom: 20px;
     color: var(--text-color);
   }
+  
   p {
     font-size: 25px;
     font-weight: 300;
@@ -68,11 +79,12 @@
     margin-bottom: 30px;
     color: var(--text-color);
   }
+  
   #content ul {
     color: var(--text-color);
     padding-left: 20px;
   }
-
+  
   /* Theme toggle button */
   #theme-toggle {
     position: fixed;
@@ -88,6 +100,8 @@
     transition: background-color 0.2s ease;
     color: var(--text-color);
   }
+  
   #theme-toggle:hover {
     background-color: var(--button-hover-bg);
   }
+  
