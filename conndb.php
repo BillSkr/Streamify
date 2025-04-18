@@ -1,7 +1,7 @@
 <?php
 $servername = "127.0.0.1";
 $username = "root";
-$password = "";        // Add your DB password here
+$password = "";  
 $dbname = "form";
 
 // Create connection

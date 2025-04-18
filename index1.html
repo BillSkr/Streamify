@@ -1,134 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-        }
-
-        #content {
-            position: relative;
-            z-index: 2;
-            padding: 20px;
-            width: 80%;
-            max-width: 600px;
-        }
-
-        p {
-            font-size: 25px;
-            font-weight: 300;
-            line-height: 40px;
-            margin-bottom: 30px;
-            color: white;
-        }
-
-        h1,
-        h2 {
-            color: aliceblue;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        ul {
-            color: white;
-            padding-left: 20px;
-        }
-
-        ul#navbar {
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            position: relative;
-            z-index: 3;
-            list-style: none;
-        }
-
-        ul#navbar li {
-            float: right;
-        }
-
-        ul#navbar li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        ul#navbar li a:hover {
-            background-color: aliceblue;
-            color: black;
-        }
-
-        .background-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .background-video video {
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streamify</title>
+  <script src="dark-light.js"></script>
+  <link rel="stylesheet" href="index.css">
 </head>
-
 <body>
 
-    <ul id="navbar">
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#help">Help</a></li>
-        <li><a href="#login">Login</a></li>
-        <li><a href="registration_form.html">Register</a></li>
+  <!-- Theme toggle -->
+  <button id="theme-toggle" aria-label="Εναλλαγή θέματος" title="Εναλλαγή θέματος">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <!-- Navigation -->
+  <ul id="navbar">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#help">Help</a></li>
+    <li><a href="#login">Login</a></li>
+    <li><a href="registration_form.html">Register</a></li>
+  </ul>
+
+  <!-- Main content -->
+  <div id="content">
+    <h1>Get more done with Streamify</h1>
+    <p>
+      Welcome to our streaming content platform.<br>
+      Here, you can create a personalized space to curate your own lists of streaming content.<br>
+      The site enables you to make your playlists public or private,<br>
+      follow other users to explore their shared content and play streaming content directly.
+    </p>
+
+    <h2>Register to Streamify</h2>
+    <p>
+      Ready to experience all that Streamify has to offer?<br>
+      Simply click "Register" in the top right corner and <br>
+      unlock instant access to all the features designed to enhance your experience.
+    </p>
+
+    <ul>
+      <li>Personalize your experience by creating your own user profile.</li>
+      <li>Organize your favorite streaming content into custom playlists.</li>
+      <li>Share your curated lists with others or keep them private.</li>
+      <li>Stay updated on new content by following other users.</li>
+      <li>Easily access content from other users' public playlists.</li>
+      <li>Conveniently play streaming content without leaving the platform.</li>
+      <li>Quickly locate playlists or content with our search functionality.</li>
     </ul>
-
-    <div id="content">
-        <h1>Get more done with Streamify</h1>
-
-        <p>Welcome to our streaming content platform.<br>
-            Here, you can create a personalized space to curate your own lists of streaming content.<br>
-            The site enables you to make your playlists public or private,<br>
-            follow other users to explore their shared content and play streaming content directly.</p>
-
-        <h2>Register to Streamify</h2>
-
-        <p>Ready to experience all that Streamify has to offer?<br>
-            Simply click "Register" in the top right corner and <br>
-            unlock instant access to all the features designed to enhance your experience.</p>
-
-        <ul>
-            <li>Personalize your experience by creating your own user profile.</li>
-            <li>Organize your favorite streaming content into custom playlists.</li>
-            <li>Share your curated lists with others or keep them private.</li>
-            <li>Stay updated on new content by following other users.</li>
-            <li>Easily access content from other users' public playlists.</li>
-            <li>Conveniently play streaming content without leaving the platform.</li>
-            <li>Quickly locate playlists or content with our search functionality.</li>
-        </ul>
-    </div>
-
-    <div class="background-video">
-        <video autoplay loop muted playsinline>
-            <source src="my-video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
+  </div>
 
 </body>
-
 </html>
