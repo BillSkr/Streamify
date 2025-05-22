@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: #333;
+    color: white;
+    padding: 1rem;
+}
+.container {
+    padding: 2rem;
+}
+/* Accordion */
+.accordion { cursor: pointer; margin: 1rem 0; }
+.accordion-content { display: none; padding: 0 1rem; }
+
+/* Light/Dark theme */
+body.light { background: #f4f4f4; color: #333; }
+body.dark { background: #333; color: #f4f4f4; }
