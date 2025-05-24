@@ -18,3 +18,73 @@ body {
 /* Light/Dark theme */
 body.light { background: #f4f4f4; color: #333; }
 body.dark { background: #333; color: #f4f4f4; }
+
+body.light {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.dark {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Διατηρούμε την κατανομή του χώρου */
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+/* Προσθήκη: Στυλ για το user-info */
+.user-info {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+#theme-toggle {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#theme-toggle:hover {
+    background-color: #45a049;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
